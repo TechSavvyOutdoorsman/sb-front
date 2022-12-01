@@ -1,7 +1,6 @@
 body {
-    background: #fafafa;
-    color: #333333;
-    display: block;
+  display: block;
+    background: #1F1E1F;
     font-family: "Rubik", 'sans-serif';
   }
 
@@ -461,3 +460,9 @@ body {
     margin-right: 20rem;
   }
 }
+
+/* Styling */
+
+  .to-uppercase {
+    text-transform: uppercase;
+  }
