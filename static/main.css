@@ -1,9 +1,11 @@
 body {
     background: #fafafa;
     color: #333333;
-    margin-top: 5rem;
-    font-family: "Segoe UI";
+    display: block;
+    font-family: "Rubik", 'sans-serif';
   }
+
+  /* Text */
 
   h1, h2 {
     color: #19AC00;
@@ -13,7 +15,7 @@ body {
     color: #444444;
   }
 
-  /* Fonts */
+  /* Colors */
 
   .mono-100 {
     color: #EBEAEB;
@@ -31,8 +33,72 @@ body {
     color: #1F1E1F;
   }
 
-  .bg-steel {
-    background-color: #19AC00;
+  .primary-100 {
+    color: #83ECBB;
+  }
+
+  .primary-200 {
+    color: #22D37D;
+  }
+
+  .primary-800 {
+    color: #178C54;
+  }
+
+  .primary-900 {
+    color: #0B462A;
+  }
+
+  .background-mono-100 {
+    background: #EBEAEB;
+  }
+
+  .background-mono-200 {
+    background: #B9B6B9;
+  }
+
+  .background-mono-800 {
+    background: #363537;
+  }
+
+  .background-mono-900 {
+    background: #1F1E1F;
+  }
+
+  .background-primary-100 {
+    background: #83ECBB;
+  }
+
+  .background-primary-200 {
+    background: #22D37D;
+  }
+
+  .background-primary-800 {
+    background: #178C54;
+  }
+
+  .background-primary-900 {
+    background: #0B462A;
+  }
+
+  .highlight-yellow {
+    color: #FFD449;
+  }
+
+  .highlight-green {
+    color: #72FF75;
+  }
+
+  .highlight-blue {
+    color: #A8D5E2;
+  }
+
+  .highlight-turquoise {
+    color: #A8D5E2;
+  }
+
+  .highlight-maroon {
+    color: #5D2A42;
   }
   
   .site-header .navbar-nav .nav-link {

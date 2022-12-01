@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
@@ -13,59 +16,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-  <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-      <div class="container">
-        <a class="navbar-brand me-4" href="/">SweatBets</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
-            <li><a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a></li>
-            <li><a class="nav-item nav-link" href="{{ url_for('description') }}">Docs</a></li>
-            <li><a class="nav-item nav-link" href="{{ url_for('terms') }}">Terms and Conditions</a></li>
-          </ul>
-          <!-- Navbar Right Side -->
-          <div class="navbar-nav ms-auto">
-          </div>
+  <body>
+
+    <!-- Navbar -->
+
+      <header>
+          <nav class="navbar background-mono-800">
+              <div class='navbar-logo-wrapper'>
+                  <img src='/public/images/sweatbets/sb_logo.svg' alt='SweatBets Logo' />
+                </div>
+                <div class="navbar-links-wrapper">
+                    <div class='navbar-toggle'>
+                        <span class='navbar-toggle-dot' />
+                        <span class='navbar-toggle-dot' />
+                        <span class='navbar-toggle-dot' />
+                    </div>
+                    <ul class='navbar-links'>
+                        <li><a src=''>What is SweatBets?</a></li>
+                        <li><a src=''>About</a></li>
+                        <li><a src=''>FAQ</a></li>
+                        <li><a src=''>Account</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Landing Section -->
+
+        <div class='landing-hero-wrapper'>
+
+            <div class='landing-cta-wrapper'>
+                <h1 class='mono-100'>Win Money Playing Your Favorite Games.</h1>
+                <p class='mono-100'>Payouts up to 20x!</p>
+                <button class='landing-cta-btn to-uppercase'>SIGN UP</button>
+            </div>
+
+            <div class='landing-dots'>
+                
+            </div>
+
         </div>
-      </div>
-    </nav>
-  </header>
 
-<div class="hero">
-  <div class="hero__container">
-    <h1 class="hero__heading"><span>SweatBets</span></h1>
-    <p class="hero__description">iGaming made easy. Like, stupid easy.</p>
-  </div> 
-</div>
+        <!-- BET -->
 
-<!-- About Section -->
+        <div class='landing-basic-wrapper'>
+            <h2 class='landing-info-header mono-100 to-uppercase'>bet</h2>
+            <div class='landing-info-image-wrapper'>
+                <img src='' alt='' />
+            </div>
+            <p class='mono-100'>Place your bet online.</p>
+        </div>
 
-<div class="main">
-  <div class="main__container">
-    <div class="main__img--container">
-      <div class="main__img--card"><i class="fa-sharp fa-solid fa-gamepad-modern fa-beat-fade"></i></div>
-    </div>
-    <div class="main__content">
-      <h1>What do we do?</h1>
-      <h2>We let users bet on video games.</h2>
-      <p>SweatBets allows users to win money based off their performance in their favorite video games. The higher the kills, the higher the payout.</p>
-    </div>
-  </div>
-</div>
+        <!-- PLAY -->
 
-<div class="main">
-  <div class="main__container">
-    <div class="main__img--container">
-      <div class="main__img--card"><i class="fa-sharp fa-solid fa-sack-dollar fa-beat-fade"></i></div>
-    </div>
-    <div class="main__content">
-      <h1>Money</h1>
-      <h2>We make getting your funds easy.</h2>
-      <p>SweatBets uses cryptocurrency Algorand to make sure users get their funds as fast and securly as possible. Deposits and withdrawls take seconds.</p>
-    </div>
-  </div>
-</div>
+        <div class='landing-basic-wrapper'>
+            <h2 class='landing-info-header mono-100 to-uppercase'>play</h2>
+            <div class='landing-info-image-wrapper'>
+                <img src='' alt='' />
+            </div>
+            <p class='mono-100'>Play as you normally would.</p>
+        </div>
+
+        <!-- WIN -->
+
+        <div class='landing-basic-wrapper'>
+            <h2 class='landing-info-header mono-100 to-uppercase'>win</h2>
+            <div class='landing-info-image-wrapper'>
+                <img src='' alt='' />
+            </div>
+            <p class='mono-100'>Win massive payouts!</p>
+        </div>
+
+        <!-- PERA WALLET -->
+
+        <div class='landing-basic-wrapper'>
+            <h2 class='landing-info-header mono-100 to-uppercase'>connect your pera wallet</h2>
+            <div class='landing-info-image-wrapper'>
+                <img src='' alt='' />
+            </div>
+            <p class='mono-100'>Yep. It’s really that easy. Just create an account, connect your Pera wallet and send crypto to your SweatBets account.</p>
+        </div>
+
+        <!-- FAVORITE GAMES -->
+
+        <div class='landing-basic-wrapper'>
+            <h2 class='landing-info-header mono-100 to-uppercase'>play your favorite games</h2>
+            <div class='landing-info-dual-image-wrapper'>
+                <img src='/public/images/brands/fortnight_logo.svg' alt='FORTNITE Logo' />
+                <img src='/public/images/brands/valorant_logo.svg' alt='VALORANT Logo' />
+            </div>
+            <p class='mono-100'>Yep. It’s really that easy. Just create an account, connect your Pera wallet and send crypto to your SweatBets account.</p>
+        </div>
+
+        <!-- FINAL CTA -->
+
+        <div class='landing-basic-wrapper'>
+            <h2 class='landing-info-header mono-100 to-uppercase'>join the fun & win big!</h2>
+            <div class='landing-info-image-wrapper'>
+                <button class='landing-cta-btn-large to-uppercase'>Sign up</button>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+
+        <footer class='background-mono-800'>
+            <div class='footer-info-wrapper'>
+                <div class='footer-icons-wrapper'>
+                    <img class='footer-icon' src='/public/images/brands/discord_logo.svg' alt='Discord Logo' />
+                    <img class='footer-icon' src='/public/images/brands/twitter_logo.svg' alt='Youtube Logo' />
+                    <img class='footer-icon' src='/public/images/brands/tiktok_logo.svg' alt='Twitter Logo' />
+                    <img class='footer-icon' src='/public/images/brands/instagram_logo.svg' alt='Instagram Logo' />
+                    <img class='footer-icon' src='/public/images/brands/youtube_logo.svg' alt='TikTok Logo' />
+                </div>
+                <p class='footer-text mono-200 to-uppercase'>terms and conditions</p>
+                <p class='footer-text mono-200 to-uppercase'>Sweatbets LLC</p>
+            </div>
+
+        </footer>
+
+        
+    </body>
+
+
+
 </html>
