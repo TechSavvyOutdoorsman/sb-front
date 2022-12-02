@@ -319,12 +319,16 @@ body {
     flex-direction: column;
     width: 100%;
     min-height: 70vh;
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-bottom: 10rem;
-    @media (min-width: 768px;) {
-      margin-bottom: 20rem;
+  }
+
+  @media (min-width: 768px) {
+    .landing-hero-wrapper {
+      min-height: 90vh;
+      padding-top: 8rem;
     }
   }
 
@@ -334,13 +338,13 @@ body {
     align-items: center;
     text-align: center;
     max-width: 768px;
-    gap: 0.5rem;
     z-index: 2;
   }
 
   .landing-cta-button {
     border-radius: 3px;
     border: none;
+    margin-top: 0.7rem;
     padding: 0.25em 1em;
     font-size: var(--fs-400);
     transition: 0.2s ease;
@@ -375,7 +379,6 @@ body {
   .landing-info-image-wrapper {
     width: 100%;
     height: 400px;
-    padding: 1rem 1rem;
   }
 
   @media all and (min-width: 768px) {
@@ -494,12 +497,13 @@ body {
     display: flex; 
     flex-direction: column;
     gap: 8rem;
-    margin-bottom: 10rem;
-    @media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
+    .padding-wrapper {
       gap: 12rem;
     }
   }
-
   /* Animations */
 
   @keyframes mobileButton {
