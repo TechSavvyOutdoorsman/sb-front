@@ -376,6 +376,12 @@ body {
     } */
   }
 
+  @media (min-width: 768px) {
+    .landing-basic-wrapper {
+      gap: 5rem;
+    }
+  }
+
   .landing-info-image-wrapper {
     width: 100%;
     height: 400px;
